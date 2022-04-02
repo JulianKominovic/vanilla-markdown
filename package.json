@@ -1,0 +1,19 @@
+{
+  "name": "vanilla-md-blog",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^2.8.0"
+  },
+  "dependencies": {
+    "highlight.js": "^11.5.0",
+    "markdown-it": "^12.3.2",
+    "markdown-it-underline": "^1.0.1",
+    "sanitize-html": "^2.7.0"
+  }
+}

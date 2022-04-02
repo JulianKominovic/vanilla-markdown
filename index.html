@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;1,200;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="stylesheet" href="./src/dracula.min.css" />
+
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <section id="editor">
+        <div id="editor__toolbar">
+          <div class="toolbar__section" id="toolbar__text">
+            <button class="button" id="button-black"><b>B</b></button>
+            <button class="button" id="button-italic"><i>I</i></button>
+            <button class="button" id="button-underline"><u>U</u></button>
+            <button class="button" id="button-strike"><s>S</s></button>
+            <button class="button" id="button-blockquote">" "</button>
+          </div>
+
+          <div class="toolbar__section" id="toolbar__elements">
+            <button class="button" id="button-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 20 19"
+                fill="none"
+              >
+                <path
+                  d="M8.59 10.7939C9 11.1839 9 11.8239 8.59 12.2139C8.2 12.6039 7.56 12.6039 7.17 12.2139C5.22 10.2639 5.22 7.09388 7.17 5.14388L10.71 1.60387C12.66 -0.346125 15.83 -0.346125 17.78 1.60387C19.73 3.55387 19.73 6.72387 17.78 8.67387L16.29 10.1639C16.3 9.34387 16.17 8.52387 15.89 7.74387L16.36 7.26388C17.54 6.09388 17.54 4.19387 16.36 3.02387C15.19 1.84387 13.29 1.84387 12.12 3.02387L8.59 6.55387C7.41 7.72387 7.41 9.62387 8.59 10.7939ZM11.41 6.55387C11.8 6.16387 12.44 6.16387 12.83 6.55387C14.78 8.50388 14.78 11.6739 12.83 13.6239L9.29 17.1639C7.34 19.1139 4.17 19.1139 2.22 17.1639C0.27 15.2139 0.27 12.0439 2.22 10.0939L3.71 8.60388C3.7 9.42388 3.83 10.2439 4.11 11.0339L3.64 11.5039C2.46 12.6739 2.46 14.5739 3.64 15.7439C4.81 16.9239 6.71 16.9239 7.88 15.7439L11.41 12.2139C12.59 11.0439 12.59 9.14388 11.41 7.97388C11 7.58388 11 6.94387 11.41 6.55387Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+            <button class="button" id="button-separator">---</button>
+            <button class="button" id="button-code">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 22 19"
+                fill="none"
+              >
+                <path
+                  d="M11.89 0.383875L13.85 0.783875L10.11 18.3839L8.15 17.9839L11.89 0.383875ZM18.59 9.38387L15 5.79387V2.96387L21.42 9.38387L15 15.7939V12.9639L18.59 9.38387ZM0.58 9.38387L7 2.96387V5.79387L3.41 9.38387L7 12.9639V15.7939L0.58 9.38387Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+            <button class="button" id="button-orderlist">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 19 17"
+                fill="none"
+              >
+                <path
+                  d="M5 9.38387V7.38387H19V9.38387H5ZM5 15.3839V13.3839H19V15.3839H5ZM5 3.38387V1.38387H19V3.38387H5ZM1 4.38387V1.38387H0V0.383875H2V4.38387H1ZM0 13.3839V12.3839H3V16.3839H0V15.3839H2V14.8839H1V13.8839H2V13.3839H0ZM2.25 6.38387C2.44891 6.38387 2.63968 6.46289 2.78033 6.60355C2.92098 6.7442 3 6.93496 3 7.13387C3 7.33387 2.92 7.52388 2.79 7.65388L1.12 9.38387H3V10.3839H0V9.46387L2 7.38387H0V6.38387H2.25Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+            <button class="button" id="button-list">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 19 16"
+                fill="none"
+              >
+                <path
+                  d="M5 1.38387H19V3.38387H5V1.38387ZM5 9.38387V7.38387H19V9.38387H5ZM2 0.883875C2.39782 0.883875 2.77936 1.04191 3.06066 1.32321C3.34196 1.60452 3.5 1.98605 3.5 2.38387C3.5 2.7817 3.34196 3.16323 3.06066 3.44454C2.77936 3.72584 2.39782 3.88387 2 3.88387C1.60218 3.88387 1.22064 3.72584 0.93934 3.44454C0.658035 3.16323 0.5 2.7817 0.5 2.38387C0.5 1.98605 0.658035 1.60452 0.93934 1.32321C1.22064 1.04191 1.60218 0.883875 2 0.883875V0.883875ZM2 6.88387C2.39782 6.88387 2.77936 7.04191 3.06066 7.32321C3.34196 7.60452 3.5 7.98605 3.5 8.38387C3.5 8.7817 3.34196 9.16323 3.06066 9.44454C2.77936 9.72584 2.39782 9.88387 2 9.88387C1.60218 9.88387 1.22064 9.72584 0.93934 9.44454C0.658035 9.16323 0.5 8.7817 0.5 8.38387C0.5 7.98605 0.658035 7.60452 0.93934 7.32321C1.22064 7.04191 1.60218 6.88387 2 6.88387V6.88387ZM5 15.3839V13.3839H19V15.3839H5ZM2 12.8839C2.39782 12.8839 2.77936 13.0419 3.06066 13.3232C3.34196 13.6045 3.5 13.9861 3.5 14.3839C3.5 14.7817 3.34196 15.1632 3.06066 15.4445C2.77936 15.7258 2.39782 15.8839 2 15.8839C1.60218 15.8839 1.22064 15.7258 0.93934 15.4445C0.658035 15.1632 0.5 14.7817 0.5 14.3839C0.5 13.9861 0.658035 13.6045 0.93934 13.3232C1.22064 13.0419 1.60218 12.8839 2 12.8839V12.8839Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="toolbar__section" id="toolbar__titles">
+            <button class="button" id="button-h1">H1</button>
+            <button class="button" id="button-h2">H2</button>
+            <button class="button" id="button-h3">H3</button>
+            <button class="button" id="button-h4">H4</button>
+            <button class="button" id="button-h5">H5</button>
+            <button class="button" id="button-h6">H6</button>
+          </div>
+        </div>
+
+        <textarea
+          name="editor"
+          id="editor-input"
+          cols="50"
+          rows="50"
+        ></textarea>
+      </section>
+      <section id="result"></section>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
