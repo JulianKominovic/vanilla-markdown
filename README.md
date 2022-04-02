@@ -9,3 +9,9 @@ Coming soon...
 - Persistant notes.
 - Moar Themes.
 - Testing 🤣
+
+Resources:
+- Dracula theme: https://draculatheme.com/contribute
+- MarkdownIt underline: https://github.com/arve0/markdown-it-underline
+- MarkdownIt: https://github.com/markdown-it/markdown-it
+- Highlight JS: https://highlightjs.org/
