@@ -3,6 +3,7 @@ Vanilla javascript css and html friendly markdown writter.
 
 Coming soon...
 - Download markdown as html.
+- ~~Mobile port.~~
 - Better editor.
 - Desktop app.
 - Autosaving.
